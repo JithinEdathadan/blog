@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block page_title %}Monthly Challenges {% endblock %}</title>
+    <link rel="stylesheet" href="{% static "main-styles.css" %}">
+    {% block css_files %}{% endblock %}
+</head>
+<body>
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/me.png"%}" alt="jj bogs">
+            <h2>Jithin Blog's</h2>
+        </header>
+        <p>Hi , I am Jithin, I love programming</p>
+    </section>
+    {% block content %} {% endblock %}
+    <section id="about">
+        <h2>What id do</h2>
+        <p>I love programming</p>
+        <p>para 2 something something</p>
+    </section>
+</body>
+</html>
